@@ -1,4 +1,8 @@
-marlaandmatt
-============
+Marla and Matt: The Wedding Website
+===================================
 
-marlaandmatt
+Requirements
+* Ruby
+* Jekyll
+
+
