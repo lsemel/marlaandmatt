@@ -19,10 +19,10 @@
 
 <div class="container">
     <nav class="col-md-8 col-md-offset-2">
-        <a class="active" href="{{ site.baseurl }}/">The Couple</a>
-        <a href="{{ site.baseurl }}/">The Wedding</a>
-        <a href="{{ site.baseurl }}/">Wedding Details</a>
-        <a href="{{ site.baseurl }}/">Registry</a>
+        <a {% if page.active == "couple" %}class="active" {% endif %}href="{{ site.baseurl }}/">The Couple</a>
+        <a {% if page.active == "wedding-party" %}class="active" {% endif %}href="{{ site.baseurl }}/wedding-party.html">The Wedding Party</a>
+        <a {% if page.active == "ceremony" %}class="active" {% endif %}href="{{ site.baseurl }}/ceremony.html">The Ceremony</a>
+        <a {% if page.active == "registry" %}class="active" {% endif %}href="{{ site.baseurl }}/registry.html">Registry</a>
     </nav>
     <div class="content col-md-8 col-md-offset-2">
         {{ content }}
@@ -32,8 +32,7 @@
 <div class="footer">
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
-            &copy; 2014 Marla & Matt Brands LLC - All Right Reserved
-            - Matt & Marla&reg; is a registered trademark
+
         </div>
     </div>
 </div>

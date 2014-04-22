@@ -2453,15 +2453,15 @@ body {
   margin: 0; }
 
 .top {
-  height: 600px;
+  height: 400px;
   background-position: 50% 50%;
   text-align: center;
   background-size: cover; }
 .top h1 {
-  font-family: "Life Savers", cursive;
-  padding-top: 350px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 200px;
   margin-top: 0;
-  color: #fdf4c4;
+  color: #fbe989;
   letter-spacing: -0.03em;
   font-size: 175px; }
 
@@ -2480,6 +2480,11 @@ h2 {
   font-size: 19px;
   font-weight: 600;
   color: #3f4345; }
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 nav {
   margin: 10px;
