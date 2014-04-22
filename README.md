@@ -9,4 +9,4 @@ Requirements
 
     gem install jekyll
 
-    jekyll serve --watch
+    jekyll serve --baseurl '' --watch
