@@ -6,3 +6,7 @@ Requirements
 * Jekyll
 
 
+
+    gem install jekyll
+
+    jekyll serve --watch
