@@ -1,8 +1,18 @@
 // Bootstrap Overrides
 // -----------------------
 $font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
-$font-family-serif:       Georgia, "Times New Roman", Times, serif
-$font-family-cursive:     'Life Savers', cursive
+$font-family-cursive:  "Life Savers", cursive
+
+$yellow: #f8d930
+$yellow-light: lighten($yellow,18%)
+$yellow-lighter: lighten($yellow,30%)
+$gray: #636a6d
+$gray-darker: darken($gray, 15%)
+$gray-light: #fafafa
+$pink: #edbbaa
+$pink-lighter: lighten($pink, 15%)
+
+
 @import "bootstrap"
 
 body
@@ -13,15 +23,17 @@ body
 
 
 .top
-    height: 400px
-    background-size: cover
-    background-position: center
+    height: 600px
+    background-position: 50% 50%
     text-align: center
+    background-size: cover
     h1
-        padding-top: 50px
+        font-family: $font-family-cursive
+        padding-top: 350px
         margin-top: 0
-        color: #fff
-        font-size: 120px
+        color: $yellow-lighter
+        letter-spacing: -.03em
+        font-size: 175px
 p
     font-family: $font-family-sans-serif
     font-size: 15px
@@ -36,20 +48,24 @@ h2
     font-weight: bold
     font-size: 19px
     font-weight: 600
+    color: $gray-darker
+
 nav
-    padding: 10px
+    margin: 10px
+    padding: 15px 15px 20px 15px
     text-align: center
     font-family: $font-family-sans-serif
+    text-transform: uppercase
     font-size: 22px
-    font-weight: bold
+    font-weight: 400
     a
+        color: $gray-darker
         margin-right: 20px
         padding-bottom: 3px
     a, a:visited, a:hover
         text-decoration: none
-        color: $gray-darker
     a.active
-        border-bottom: 3px solid #777
+        border-bottom: 5px solid $yellow-light
 
 .footer
     padding-top: 25px
