@@ -2506,3 +2506,23 @@ nav a.active {
 .footer {
   padding-top: 25px;
   padding-bottom: 50px; }
+
+.person-group {
+  margin-bottom: 15px; }
+.person-group:before, .person-group:after {
+  content: " ";
+  display: table; }
+.person-group:after {
+  clear: both; }
+
+.person {
+  margin-bottom: 30px; }
+.person:before, .person:after {
+  content: " ";
+  display: table; }
+.person:after {
+  clear: both; }
+.person h3 {
+  margin-top: 0; }
+.person img.pull-left {
+  margin-right: 30px; }
