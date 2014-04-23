@@ -3,7 +3,15 @@ layout: default
 title: Marla and Matt are getting married! Yay!
 photo: /images/bench.jpg
 active: couple
+carousel:
+- thumb: http://placehold.it/50x50&amp;text=one
+  src: http://placehold.it/1200x480&amp;text=one
+- thumb: http://placehold.it/50x50&amp;text=two
+  src: http://placehold.it/1200x480&amp;text=two
+- thumb: http://placehold.it/50x50&amp;text=three
+  src: http://placehold.it/1200x480&amp;text=three
 ---
+
 
 <h2>This is how we met</h2>
 <p>Marla and Matt first shared a quick hello in the winter of 2008 while Matt was eating an empanada in a Santa suit.
@@ -66,3 +74,50 @@ active: couple
         </p>
     </div>
 </div>
+
+<div class="row">
+
+
+    <!-- main slider carousel -->
+
+
+    <div class="col-md-12" id="carousel-bounding-box">
+
+        <h2>Photos</h2>
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- main slider carousel items -->
+            <div class="carousel-inner">
+                {% for item in page.carousel %}
+                <div class="{% if forloop.index0 == 0 %}active{% endif %} item"
+                     data-slide-number="{{ forloop.index0 }}">
+                    <img src="{{ item.src }}" class="img-responsive">
+                </div>
+                {% endfor %}
+            </div>
+
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+        </div>
+    </div>
+
+    <!--/main slider carousel-->
+
+    <!-- thumb navigation carousel -->
+    <div class="col-md-12 " id="slider-thumbs">
+
+
+        <!-- thumb navigation carousel items -->
+        <ul class="list-inline">
+            {% for item in page.carousel %}
+            <li><a id="carousel-selector-{{ forloop.index0 }}" {% if forloop.index0 == 0 %}class="selected"{% endif %}>
+                <img src="{{ item.thumb }}" class="img-responsive">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+
+
