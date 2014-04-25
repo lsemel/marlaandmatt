@@ -11,14 +11,16 @@
     <script src="{{ site.baseurl }}/javascripts/bootstrap/transition.js"></script>
     <script src="{{ site.baseurl }}/javascripts/bootstrap/carousel.js"></script>
     <script src="{{ site.baseurl }}/javascripts/carousel.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,600,700|Life+Savers:400' rel='stylesheet' type='text/css'>"
-          rel="stylesheet" type="text/css"/>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lato:300,600,700|Life+Savers:400' rel='stylesheet' type='text/css'>" -->
+    <link href="http://fonts.googleapis.com/css?family=Pacifico|Lato:300,600,700|' rel='stylesheet' type='text/css'>"
 
 </head>
 <body>
 
 <div class="top" style="background-image:url({{ site.baseurl }}{{ page.photo }})">
-    <!--<h1><span>Marla</span> <span class="amp">&</span> <span>Matt</span></h1>-->
+    {% if page.active == "couple" %}
+ <img class="headline" src="{{ site.baseurl }}/images/marlaandmatt.png" />
+    {% endif %}
 </div>
 
 <div class="container">

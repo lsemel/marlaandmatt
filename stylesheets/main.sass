@@ -1,10 +1,10 @@
 // Bootstrap Overrides
 // -----------------------
 $font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
-$font-family-cursive:  "Life Savers", cursive
+$font-family-cursive:  "Pacifico", cursive
 
 $yellow: #f8d930
-$yellow-light: lighten($yellow,18%)
+$yellow-light: lighten($yellow,18%) // #fff691
 $yellow-lighter: lighten($yellow,30%)
 $gray: #636a6d
 $gray-darker: darken($gray, 15%)
@@ -16,11 +16,10 @@ $pink-lighter: lighten($pink, 15%)
 @import "bootstrap"
 
 body
-    background: #f6f6f6
+    background: #fafafa
     color: #111
     padding: 0
     margin: 0
-
 
 .top
     height: 600px
@@ -64,16 +63,19 @@ nav
     font-size: 22px
     font-weight: 600
     a
+        text-transform: lowercase
+        font-family: $font-family-cursive
         color: $gray-darker
         margin-right: 20px
         padding-bottom: 3px
-        &:active
-            color: $gray
-            border-bottom: 3px solid $gray
-    a, a:visited, a:hover
         text-decoration: none
-    a.active
-        border-bottom: 3px solid $gray-darker
+        &:hover, &:active
+            color: $yellow-light
+            text-decoration: none
+        &.active
+            color: $gray
+
+
 
 .footer
     padding-top: 25px

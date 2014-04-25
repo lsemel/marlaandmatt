@@ -2596,7 +2596,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .hidden-print {
     display: none !important; } }
 body {
-  background: #f6f6f6;
+  background: #fafafa;
   color: #111111;
   padding: 0;
   margin: 0; }
@@ -2644,16 +2644,17 @@ nav {
   font-size: 22px;
   font-weight: 600; }
 nav a {
+  text-transform: lowercase;
+  font-family: "Pacifico", cursive;
   color: #3f4345;
   margin-right: 20px;
-  padding-bottom: 3px; }
-nav a:active {
-  color: #636a6d;
-  border-bottom: 3px solid #636a6d; }
-nav a, nav a:visited, nav a:hover {
+  padding-bottom: 3px;
+  text-decoration: none; }
+nav a:hover, nav a:active {
+  color: #fbe989;
   text-decoration: none; }
 nav a.active {
-  border-bottom: 3px solid #3f4345; }
+  color: #636a6d; }
 
 .footer {
   padding-top: 25px;
