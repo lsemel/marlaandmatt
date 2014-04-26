@@ -774,7 +774,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -858,7 +858,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #fafafa; }
+  color: #899094; }
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 20px;
@@ -925,7 +925,7 @@ mark, .mark {
   text-align: justify; }
 
 .text-muted {
-  color: #fafafa; }
+  color: #899094; }
 
 .text-primary {
   color: #428bca; }
@@ -1044,7 +1044,7 @@ dd {
 
 abbr[title], abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #fafafa; }
+  border-bottom: 1px dotted #899094; }
 
 .initialism {
   font-size: 90%;
@@ -1061,7 +1061,7 @@ blockquote footer, blockquote small, blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857;
-  color: #fafafa; }
+  color: #899094; }
 blockquote footer:before, blockquote small:before, blockquote .small:before {
   content: '\2014 \00A0'; }
 
@@ -1832,12 +1832,12 @@ output {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 .form-control::-moz-placeholder {
-  color: #fafafa;
+  color: #899094;
   opacity: 1; }
 .form-control:-ms-input-placeholder {
-  color: #fafafa; }
+  color: #899094; }
 .form-control::-webkit-input-placeholder {
-  color: #fafafa; }
+  color: #899094; }
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   cursor: not-allowed;
   background-color: #eeeeee;
@@ -2220,7 +2220,7 @@ textarea.input-lg, select[multiple].input-lg {
   text-decoration: underline;
   background-color: transparent; }
 .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
-  color: #fafafa;
+  color: #899094;
   text-decoration: none; }
 
 .btn-lg {
@@ -2601,30 +2601,40 @@ body {
   padding: 0;
   margin: 0; }
 
-.top {
+.mm-headline {
+  position: relative;
+  width: 400px;
+  top: 10%;
+  left: 20%; }
+
+.mm-top {
   height: 600px;
-  background-position: 50% 70%;
   text-align: center;
   background-size: cover; }
-.top h1 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.mm-top h1 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 50px;
   margin-top: 0;
   color: white;
   letter-spacing: -0.03em;
   font-size: 100px; }
 
+.mm-top-couple {
+  background-position: 50% 50%; }
+
+.mm-top-wedding-party {
+  background-position: 50% 80%; }
+
 p {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300; }
+  font-family: "Lora", "Georgia", serif;
+  font-size: 14px; }
 
 h1 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 h2 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 19px;
   font-weight: 600;
@@ -2635,25 +2645,29 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; }
 
-nav {
-  margin: 10px;
-  padding: 15px 15px 20px 15px;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+ul.mm-nav {
+  margin-top: 20px; }
+ul.mm-nav.affix {
+  position: fixed;
+  top: 20px; }
+ul.mm-nav li {
   font-size: 22px;
-  font-weight: 600; }
-nav a {
-  text-transform: lowercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 25%;
+  white-space: nowrap;
+  margin-right: 20px; }
+ul.mm-nav li span {
   font-family: "Pacifico", cursive;
+  text-transform: lowercase; }
+ul.mm-nav li a {
   color: #3f4345;
-  margin-right: 20px;
-  padding-bottom: 3px;
   text-decoration: none; }
-nav a:hover, nav a:active {
+ul.mm-nav li a:hover, ul.mm-nav li a:active {
   color: #fbe989;
   text-decoration: none; }
-nav a.active {
+ul.mm-nav li a.active {
   color: #636a6d; }
 
 .footer {
@@ -2682,3 +2696,22 @@ nav a.active {
 
 .selected img {
   opacity: 0.5; }
+
+.mm-registry {
+  margin-top: 25px;
+  list-style-type: none;
+  display: block; }
+.mm-registry > div {
+  display: block;
+  float: left;
+  height: 100px;
+  width: 30%;
+  background: #636a6d;
+  margin-right: 10px; }
+.mm-registry > div:hover {
+  background: #899094; }
+.mm-registry > div a {
+  display: block;
+  line-height: 100px;
+  color: white;
+  text-align: center; }

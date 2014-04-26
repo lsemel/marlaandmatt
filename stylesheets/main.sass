@@ -1,14 +1,15 @@
 // Bootstrap Overrides
 // -----------------------
-$font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-sans-serif:  "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 $font-family-cursive:  "Pacifico", cursive
+$font-family-serif: "Lora", "Georgia", serif
 
 $yellow: #f8d930
 $yellow-light: lighten($yellow,18%) // #fff691
 $yellow-lighter: lighten($yellow,30%)
 $gray: #636a6d
 $gray-darker: darken($gray, 15%)
-$gray-light: #fafafa
+$gray-light: lighten($gray, 15%)
 $pink: #edbbaa
 $pink-lighter: lighten($pink, 15%)
 
@@ -20,10 +21,13 @@ body
     color: #111
     padding: 0
     margin: 0
-
-.top
+.mm-headline
+    position: relative
+    width: 400px
+    top: 10%
+    left: 20%
+.mm-top
     height: 600px
-    background-position: 50% 70%
     text-align: center
     background-size: cover
     h1
@@ -33,11 +37,13 @@ body
         color: white
         letter-spacing: -.03em
         font-size: 100px
+.mm-top-couple
+    background-position: 50% 50%
+.mm-top-wedding-party
+    background-position: 50% 80%
 p
-    font-family: $font-family-sans-serif
-    font-size: 15px
-    font-weight: 300
-
+    font-family: $font-family-serif
+    font-size: 14px
 h1
     font-family: $font-family-sans-serif
     font-weight: bold
@@ -54,28 +60,30 @@ h4
     font-weight: bold
     text-transform: uppercase
 
-nav
-    margin: 10px
-    padding: 15px 15px 20px 15px
-    text-align: center
-    font-family: $font-family-sans-serif
-    text-transform: uppercase
-    font-size: 22px
-    font-weight: 600
-    a
-        text-transform: lowercase
-        font-family: $font-family-cursive
-        color: $gray-darker
+ul.mm-nav
+    &.affix
+        position: fixed
+        top: 20px
+    margin-top: 20px
+    li
+        font-size: 22px
+        font-family: $font-family-sans-serif
+        font-weight: bold
+        text-transform: uppercase
+        span
+            font-family: $font-family-cursive
+            text-transform: lowercase
+        width: 25%
+        white-space: nowrap
         margin-right: 20px
-        padding-bottom: 3px
-        text-decoration: none
-        &:hover, &:active
-            color: $yellow-light
+        a
+            color: $gray-darker
             text-decoration: none
-        &.active
-            color: $gray
-
-
+            &:hover, &:active
+                color: $yellow-light
+                text-decoration: none
+            &.active
+                color: $gray
 
 .footer
     padding-top: 25px
@@ -97,3 +105,24 @@ nav
 // Image carousel
 .selected img
     opacity: 0.5
+
+
+// Registry
+.mm-registry
+    margin-top: 25px
+    list-style-type: none
+    display: block
+    & > div
+        display: block
+        float: left
+        height: 100px
+        width: 30%
+        background: $gray
+        &:hover
+            background: $gray-light
+        margin-right: 10px
+        a
+            display: block
+            line-height: 100px
+            color: #fff
+            text-align: center

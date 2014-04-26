@@ -10,38 +10,63 @@
     <script src="{{ site.baseurl }}/javascripts/holder.js"></script>
     <script src="{{ site.baseurl }}/javascripts/bootstrap/transition.js"></script>
     <script src="{{ site.baseurl }}/javascripts/bootstrap/carousel.js"></script>
+    <script src="{{ site.baseurl }}/javascripts/bootstrap/affix.js"></script>
     <script src="{{ site.baseurl }}/javascripts/carousel.js"></script>
     <!-- <link href="http://fonts.googleapis.com/css?family=Lato:300,600,700|Life+Savers:400' rel='stylesheet' type='text/css'>" -->
-    <link href="http://fonts.googleapis.com/css?family=Pacifico|Lato:300,600,700|' rel='stylesheet' type='text/css'>"
-
+   <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Pacifico|Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div class="top" style="background-image:url({{ site.baseurl }}{{ page.photo }})">
+<div class="mm-top mm-top-{{ page.active }}" style="background-image:url({{ site.baseurl }}{{ page.photo }})">
     {% if page.active == "couple" %}
- <img class="headline" src="{{ site.baseurl }}/images/marlaandmatt.png" />
+ <img class="mm-headline" src="{{ site.baseurl }}/images/marlaandmatt2.png" />
     {% endif %}
 </div>
 
 <div class="container">
-    <nav>
-        <a {% if page.active == "couple" %}class="active" {% endif %}href="{{ site.baseurl }}/">The Couple</a>
-        <a {% if page.active == "wedding-party" %}class="active" {% endif %}href="{{ site.baseurl }}/wedding-party.html">The Wedding Party</a>
-        <a {% if page.active == "ceremony" %}class="active" {% endif %}href="{{ site.baseurl }}/ceremony.html">The Ceremony</a>
-        <a {% if page.active == "registry" %}class="active" {% endif %}href="{{ site.baseurl }}/registry.html">Registry</a>
-    </nav>
-    <div class="content col-md-8 col-md-offset-2">
+    <div class="col-md-4">
+    <ul class="mm-nav list-unstyled">
+        <li>
+        <a {% if page.active == "couple" %}class="active" {% endif %}href="{{ site.baseurl }}/"><span>The</span> Couple</a>
+        </li>
+        <li>
+        <a {% if page.active == "wedding-party" %}class="active" {% endif %}href="{{ site.baseurl }}/wedding-party.html"><span>the</span> Wedding Party</a>
+        </li>
+        <li>
+        <a {% if page.active == "ceremony" %}class="active" {% endif %}href="{{ site.baseurl }}/ceremony.html"><span>The</span> Ceremony</a>
+        </li>
+        <li>
+        <a {% if page.active == "registry" %}class="active" {% endif %}href="{{ site.baseurl }}/registry.html"><span>the</span> Registry</a>
+        </li>
+    </ul>
+
+    </div>
+    <div class="content col-md-8">
         {{ content }}
     </div>
 </div>
 
 <div class="footer">
     <div class="container">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
 
         </div>
     </div>
 </div>
+
+<script>
+$(function() {
+  $('.mm-nav').affix({
+    offset: {
+      top: 600,
+      bottom: function () {
+        return (this.bottom = $('.footer').outerHeight(true))
+      }
+    }
+  })
+});
+
+</script>
 
 </body>
 </html>
