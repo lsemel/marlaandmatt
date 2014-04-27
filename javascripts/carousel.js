@@ -1,17 +1,17 @@
 $(function () {
-    var carousel = $('#myCarousel');
+    var carousel = $('#mm-photo-carousel');
     carousel.carousel({
         interval: 4000
     });
 
 
 // handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click(function () {
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length - 1);
+    $('.carousel-selector').css('cursor','pointer').click(function (e) {
+        var id = $(this).attr('data-id');
         id = parseInt(id);
-        $('#myCarousel').carousel(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
+        console.log(id);
+        $('#mm-photo-carousel').carousel(id);
+        $('.carousel-selector').removeClass('selected');
         $(this).addClass('selected');
     });
 
@@ -20,8 +20,10 @@ $(function () {
         var active = $(e.target).find('.carousel-inner > .item.active');
         var from = active.index();
 
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $('[id^=carousel-selector-' + from + ']').addClass('selected');
+        $('.carousel-selector').removeClass('selected');
+        $('.carousel-selector[data-id="'+from+'"]').addClass('selected');
     });
-
+    carousel.css('cursor','pointer').on('click', function(e) {
+        carousel.carousel('next');
+    })
 });

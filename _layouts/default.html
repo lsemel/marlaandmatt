@@ -13,7 +13,7 @@
     <script src="{{ site.baseurl }}/javascripts/bootstrap/affix.js"></script>
     <script src="{{ site.baseurl }}/javascripts/carousel.js"></script>
     <!-- <link href="http://fonts.googleapis.com/css?family=Lato:300,600,700|Life+Savers:400' rel='stylesheet' type='text/css'>" -->
-   <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Pacifico|Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Pacifico|Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -30,13 +30,16 @@
         <a {% if page.active == "couple" %}class="active" {% endif %}href="{{ site.baseurl }}/"><span>The</span> Couple</a>
         </li>
         <li>
+        <a {% if page.active == "photos" %}class="active" {% endif %}href="{{ site.baseurl }}/photos.html">Photos</a>
+        </li>
+        <li>
         <a {% if page.active == "wedding-party" %}class="active" {% endif %}href="{{ site.baseurl }}/wedding-party.html"><span>the</span> Wedding Party</a>
         </li>
         <li>
         <a {% if page.active == "ceremony" %}class="active" {% endif %}href="{{ site.baseurl }}/ceremony.html"><span>The</span> Ceremony</a>
         </li>
         <li>
-        <a {% if page.active == "registry" %}class="active" {% endif %}href="{{ site.baseurl }}/registry.html"><span>the</span> Registry</a>
+        <a {% if page.active == "registry" %}class="active" {% endif %}href="{{ site.baseurl }}/registry.html">Registry</a>
         </li>
     </ul>
 
@@ -65,7 +68,6 @@ $(function() {
     }
   })
 });
-
 </script>
 
 </body>

@@ -1,0 +1,94 @@
+---
+layout: default
+title: Marla and Matt are getting married! Yay!
+photo: /images/vineapple.jpg
+active: photos
+carousel:
+- src: brooklynbridgepark.jpg
+  caption: This is the caption
+- src: brownstoneengagement.jpg
+  caption: This is the caption
+- src: carousel.jpg
+  caption: This is the caption
+- src: florence.jpg
+  caption: This is the caption
+- src: gnd.jpg
+  caption: This is the caption
+- src: goldengatepic.jpg
+  caption: This is the caption
+- src: goldengate2.jpg
+  caption: This is the caption
+- src: hanukkah.jpg
+  caption: This is the caption
+- src: holidays.jpg
+  caption: This is the caption
+- src: kayak.jpg
+  caption: This is the caption
+- src: mtrushmore.jpg
+  caption: This is the caption
+- src: prospectpark.jpg
+  caption: This is the caption
+- src: shortys.jpg
+  caption: This is the caption
+- src: subway2engagement.jpg
+  caption: This is the caption
+- src: texashikingpic.jpg
+  caption: This is the caption
+- src: toiletpaper.jpg
+  caption: This is the caption
+- src: weddingparty.jpg
+  caption: This is the caption
+- src: yellowstonepic.jpg
+  caption: This is the caption
+---
+
+
+<div class="row">
+    <div class="col-md-12">
+                <h2>Photos of Matt & Marla</h2>
+
+    </div>
+
+
+    <!-- main slider carousel -->
+
+
+    <div class="col-md-12" id="carousel-bounding-box">
+
+
+        <div id="mm-photo-carousel" class="carousel slide">
+            <!-- main slider carousel items -->
+            <div class="carousel-inner">
+                {% for item in page.carousel %}
+                <div class="{% if forloop.index0 == 0 %}active{% endif %} item"
+                     data-slide-number="{{ forloop.index0 }}"
+                        style="background-image: url({{ site.baseurl }}/images/photos/{{ item.src }})">
+
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--/main slider carousel-->
+
+    <div class="col-md-12">
+
+        <!-- thumb navigation carousel items -->
+        <div class="mm-carousel-thumbs">
+            {% for item in page.carousel %}
+            <div class="carousel-selector {% if forloop.index0 == 0 %}selected{% endif %}"
+                 style="background-image:url({{ site.baseurl }}/images/photos/{{ item.src }})"
+                data-id="{{ forloop.index0 }}">
+
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+
+

@@ -2626,7 +2626,7 @@ body {
   background-position: 50% 80%; }
 
 p {
-  font-family: "Lora", "Georgia", serif;
+  font-family: "Merriweather", "Georgia", serif;
   font-size: 14px; }
 
 h1 {
@@ -2640,6 +2640,13 @@ h2 {
   font-weight: 600;
   color: #3f4345; }
 
+h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f4345; }
+
 h4 {
   font-size: 12px;
   font-weight: bold;
@@ -2648,8 +2655,11 @@ h4 {
 ul.mm-nav {
   margin-top: 20px; }
 ul.mm-nav.affix {
-  position: fixed;
-  top: 20px; }
+  position: inherit; }
+@media (min-width: 992px) {
+  ul.mm-nav.affix {
+    position: fixed;
+    top: 20px; } }
 ul.mm-nav li {
   font-size: 22px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2668,7 +2678,7 @@ ul.mm-nav li a:hover, ul.mm-nav li a:active {
   color: #fbe989;
   text-decoration: none; }
 ul.mm-nav li a.active {
-  color: #636a6d; }
+  color: #fbe989; }
 
 .footer {
   padding-top: 25px;
@@ -2683,19 +2693,33 @@ ul.mm-nav li a.active {
   clear: both; }
 
 .person {
+  clear: both;
+  min-height: 250px;
   margin-bottom: 30px; }
-.person:before, .person:after {
-  content: " ";
-  display: table; }
-.person:after {
-  clear: both; }
 .person h3 {
   margin-top: 0; }
-.person img.pull-left {
+.person img {
+  position: absolute;
   margin-right: 30px; }
+.person .person-description {
+  margin-left: 280px; }
 
-.selected img {
-  opacity: 0.5; }
+.carousel-inner .item {
+  height: 600px;
+  width: 99%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background-position: 50% 50%;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.mm-carousel-thumbs .carousel-selector {
+  margin: 1% 0.5% 0% 0.5%;
+  padding: 0;
+  height: 75px;
+  width: 15.66667%;
+  float: left;
+  background-size: cover; }
 
 .mm-registry {
   margin-top: 25px;

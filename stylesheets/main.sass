@@ -2,7 +2,7 @@
 // -----------------------
 $font-family-sans-serif:  "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 $font-family-cursive:  "Pacifico", cursive
-$font-family-serif: "Lora", "Georgia", serif
+$font-family-serif: "Merriweather", "Georgia", serif
 
 $yellow: #f8d930
 $yellow-light: lighten($yellow,18%) // #fff691
@@ -54,6 +54,12 @@ h2
     font-size: 19px
     font-weight: 600
     color: $gray-darker
+h3
+    font-family: $font-family-sans-serif
+    font-weight: bold
+    font-size: 14px
+    font-weight: 600
+    color: $gray-darker
 
 h4
     font-size: 12px
@@ -62,8 +68,11 @@ h4
 
 ul.mm-nav
     &.affix
-        position: fixed
-        top: 20px
+        position: inherit
+    @media (min-width: $screen-md-min)
+        &.affix
+            position: fixed
+            top: 20px
     margin-top: 20px
     li
         font-size: 22px
@@ -83,7 +92,7 @@ ul.mm-nav
                 color: $yellow-light
                 text-decoration: none
             &.active
-                color: $gray
+                color: $yellow-light
 
 .footer
     padding-top: 25px
@@ -94,17 +103,37 @@ ul.mm-nav
     margin-bottom: $grid-gutter-width/2
 
 .person
-    +clearfix
+    clear: both
+    min-height: 250px
     margin-bottom: $grid-gutter-width
     h3
         margin-top: 0
-    img.pull-left
+    img
+        position: absolute
         margin-right: $grid-gutter-width
+    .person-description
+        margin-left: 250px + $grid-gutter-width
 
 
 // Image carousel
-.selected img
-    opacity: 0.5
+.carousel-inner .item
+    height: 600px
+    width: 99%
+    margin-left: .5%
+    margin-right: .5%
+    background-position: 50% 50%
+    background-position: 50% 50%
+    background-size: cover
+.mm-carousel-thumbs
+    .carousel-selector
+        margin: 1% .5% 0% .5%
+        padding: 0
+        height: 75px
+        width: 15.6666666667%
+        float: left
+        background-size: cover
+
+//.mm-carousel-thumbs img
 
 
 // Registry
