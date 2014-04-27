@@ -2656,7 +2656,7 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; }
 
-ul.mm-nav.affix {
+ul.mm-nav.affix-top, ul.mm-nav.affix, ul.mm-nav.affix-bottom {
   position: inherit; }
 @media (min-width: 992px) {
   ul.mm-nav.affix {
@@ -2707,7 +2707,7 @@ ul.mm-nav li a.active {
   margin-left: 280px; }
 
 .carousel-inner .item {
-  height: 600px;
+  height: 425px;
   width: 99%;
   margin-left: 0.5%;
   margin-right: 0.5%;
@@ -2724,7 +2724,6 @@ ul.mm-nav li a.active {
   background-size: cover; }
 
 .mm-registry {
-  margin-top: 25px;
   list-style-type: none;
   display: block; }
 .mm-registry > div {
