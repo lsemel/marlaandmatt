@@ -2608,6 +2608,7 @@ body {
   left: 20%; }
 
 .mm-top {
+  margin-bottom: 35px;
   height: 600px;
   text-align: center;
   background-size: cover; }
@@ -2624,6 +2625,9 @@ body {
 
 .mm-top-wedding-party {
   background-position: 50% 80%; }
+
+.mm-intro {
+  margin-bottom: 35px; }
 
 p {
   font-family: "Merriweather", "Georgia", serif;
@@ -2652,14 +2656,12 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; }
 
-ul.mm-nav {
-  margin-top: 20px; }
 ul.mm-nav.affix {
   position: inherit; }
 @media (min-width: 992px) {
   ul.mm-nav.affix {
     position: fixed;
-    top: 20px; } }
+    top: 25px; } }
 ul.mm-nav li {
   font-size: 22px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
