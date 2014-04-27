@@ -1,6 +1,8 @@
 Marla and Matt: The Wedding Website
 ===================================
 
+http://lsemel.github.io/marlaandmatt/
+
 Requirements
 * Ruby
 * Jekyll
