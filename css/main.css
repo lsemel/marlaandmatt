@@ -2599,13 +2599,18 @@ body {
   background: #fafafa;
   color: #111111;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  min-width: 480px; }
 
 .mm-headline {
-  position: relative;
-  width: 400px;
-  top: 10%;
-  left: 20%; }
+  position: relative; }
+@media (min-width: 992px) {
+  .mm-headline {
+    left: 20%;
+    top: 10%; } }
+@media (max-width: 991px) {
+  .mm-headline {
+    top: 5%; } }
 
 .mm-top {
   margin-bottom: 35px;
@@ -2662,6 +2667,8 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; }
 
+ul.mm-nav {
+  margin-bottom: 50px; }
 ul.mm-nav.affix-top, ul.mm-nav.affix, ul.mm-nav.affix-bottom {
   position: inherit; }
 @media (min-width: 992px) {
@@ -2706,11 +2713,20 @@ ul.mm-nav li a.active {
   margin-bottom: 30px; }
 .person h3 {
   margin-top: 0; }
-.person img {
-  position: absolute;
-  margin-right: 30px; }
+@media (max-width: 991px) {
+  .person img {
+    width: 100%; } }
+@media (min-width: 992px) {
+  .person img {
+    position: absolute;
+    margin-right: 30px;
+    width: 250px;
+    height: 250px; } }
 .person .person-description {
   margin-left: 280px; }
+@media (max-width: 991px) {
+  .person .person-description {
+    margin: 25px 0 0 0; } }
 
 .carousel-inner .item {
   height: 425px;
@@ -2752,6 +2768,8 @@ ul.mm-nav li a.active {
   line-height: 100px;
   color: white;
   text-align: center; }
+.mm-registry > div a img {
+  width: 90%; }
 
 .mm-credits {
   margin-top: 25px;
@@ -2765,5 +2783,9 @@ ul.mm-nav li a.active {
   margin-bottom: 0px;
   background: #636a6d;
   color: white; }
+.mm-footer .mm-logo {
+  width: 180px; }
+.mm-footer small {
+  font-size: 10px; }
 .mm-footer a, .mm-footer a:visited, .mm-footer a:active {
   color: #fae15c; }

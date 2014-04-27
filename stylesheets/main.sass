@@ -21,11 +21,15 @@ body
     color: #111
     padding: 0
     margin: 0
+    min-width: $screen-xs-min
+
 .mm-headline
     position: relative
-    width: 400px
-    top: 10%
-    left: 20%
+    @media (min-width: $screen-md-min)
+        left: 20%
+        top: 10%
+    @media (max-width: $screen-sm-max)
+        top: 5%
 .mm-top
     margin-bottom: 35px
     height: 600px
@@ -78,6 +82,7 @@ h4
 
 
 ul.mm-nav
+    margin-bottom: 50px
     &.affix-top, &.affix, &.affix-bottom
         position: inherit
     @media (min-width: $screen-md-min)
@@ -119,11 +124,17 @@ ul.mm-nav
     h3
         margin-top: 0
     img
-        position: absolute
-        margin-right: $grid-gutter-width
+        @media (max-width: $screen-sm-max)
+            width: 100%
+        @media (min-width: $screen-md-min)
+            position: absolute
+            margin-right: $grid-gutter-width
+            width: 250px
+            height: 250px
     .person-description
         margin-left: 250px + $grid-gutter-width
-
+        @media (max-width: $screen-sm-max)
+            margin: 25px 0 0 0
 
 // Image carousel
 .carousel-inner .item
@@ -166,11 +177,16 @@ ul.mm-nav
             line-height: 100px
             color: #fff
             text-align: center
+            img
+                width: 90%
+
 
 .mm-credits
     margin-top: 25px
     margin-bottom: 0
 .mm-footer
+    .mm-logo
+        width: 180px
     clear: both
     margin-top: 55px
     padding: 30px
@@ -178,5 +194,7 @@ ul.mm-nav
     margin-bottom: 0px
     background: $gray
     color: white
+    small
+        font-size: 10px
     a, a:visited, a:active
         color: $yellow-light
