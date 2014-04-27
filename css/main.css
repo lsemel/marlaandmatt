@@ -2626,6 +2626,12 @@ body {
 .mm-top-wedding-party {
   background-position: 50% 80%; }
 
+.mm-top-registry {
+  background-position: 50% 50%; }
+
+.mm-top-ceremony {
+  background-position: 50% 40%; }
+
 .mm-intro {
   margin-bottom: 35px; }
 
@@ -2677,10 +2683,10 @@ ul.mm-nav li a {
   color: #3f4345;
   text-decoration: none; }
 ul.mm-nav li a:hover, ul.mm-nav li a:active {
-  color: #fbe989;
+  color: #fae15c;
   text-decoration: none; }
 ul.mm-nav li a.active {
-  color: #fbe989; }
+  color: #fae15c; }
 
 .footer {
   padding-top: 25px;
@@ -2724,8 +2730,14 @@ ul.mm-nav li a.active {
   background-size: cover; }
 
 .mm-registry {
+  margin-bottom: 25px;
   list-style-type: none;
   display: block; }
+.mm-registry:before, .mm-registry:after {
+  content: " ";
+  display: table; }
+.mm-registry:after {
+  clear: both; }
 .mm-registry > div {
   display: block;
   float: left;

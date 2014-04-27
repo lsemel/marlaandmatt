@@ -5,7 +5,7 @@ $font-family-cursive:  "Pacifico", cursive
 $font-family-serif: "Merriweather", "Georgia", serif
 
 $yellow: #f8d930
-$yellow-light: lighten($yellow,18%) // #fff691
+$yellow-light: lighten($yellow,9%) // #fff691
 $yellow-lighter: lighten($yellow,30%)
 $gray: #636a6d
 $gray-darker: darken($gray, 15%)
@@ -42,6 +42,11 @@ body
     background-position: 50% 50%
 .mm-top-wedding-party
     background-position: 50% 80%
+.mm-top-registry
+    background-position: 50% 50%
+.mm-top-ceremony
+    background-position: 50% 40%
+
 .mm-intro
     margin-bottom: 35px
 
@@ -143,6 +148,8 @@ ul.mm-nav
 
 // Registry
 .mm-registry
+    +clearfix
+    margin-bottom: 25px
     list-style-type: none
     display: block
     & > div
