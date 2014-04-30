@@ -1,18 +1,18 @@
 // Bootstrap Overrides
 // -----------------------
-$font-family-sans-serif:  "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
-$font-family-cursive:  "Pacifico", cursive
+$font-family-sans-serif: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-cursive: "Pacifico", cursive
 $font-family-serif: "Merriweather", "Georgia", serif
 
 $yellow: #f8d930
-$yellow-light: lighten($yellow,9%) // #fff691
-$yellow-lighter: lighten($yellow,30%)
+$yellow-light: lighten($yellow, 9%)
+// #fff691
+$yellow-lighter: lighten($yellow, 30%)
 $gray: #636a6d
 $gray-darker: darken($gray, 15%)
 $gray-light: lighten($gray, 15%)
 $pink: #edbbaa
 $pink-lighter: lighten($pink, 15%)
-
 
 @import "bootstrap"
 
@@ -30,6 +30,7 @@ body
         top: 10%
     @media (max-width: $screen-sm-max)
         top: 5%
+
 .mm-top
     margin-bottom: 35px
     height: 600px
@@ -42,22 +43,31 @@ body
         color: white
         letter-spacing: -.03em
         font-size: 100px
+
+
+
+.mm-home-row
+    margin-bottom: 30px
+
 .mm-top-couple
     background-position: 50% 50%
+
 .mm-top-wedding-party
     background-position: 50% 80%
+
 .mm-top-registry
     background-position: 50% 50%
+
 .mm-top-ceremony
     background-position: 50% 40%
 
 .mm-intro
     margin-bottom: 35px
 
-
 p
     font-family: $font-family-serif
     font-size: 14px
+
 h1
     font-family: $font-family-sans-serif
     font-weight: bold
@@ -68,6 +78,7 @@ h2
     font-size: 19px
     font-weight: 600
     color: $gray-darker
+
 h3
     font-family: $font-family-sans-serif
     font-weight: bold
@@ -79,7 +90,6 @@ h4
     font-size: 12px
     font-weight: bold
     text-transform: uppercase
-
 
 ul.mm-nav
     margin-bottom: 50px
@@ -145,6 +155,7 @@ ul.mm-nav
     background-position: 50% 50%
     background-position: 50% 50%
     background-size: cover
+
 .mm-carousel-thumbs
     .carousel-selector
         margin: 1% .5% 0% .5%
@@ -153,8 +164,6 @@ ul.mm-nav
         width: 15.6666666667%
         float: left
         background-size: cover
-
-//.mm-carousel-thumbs img
 
 
 // Registry
@@ -180,10 +189,10 @@ ul.mm-nav
             img
                 width: 90%
 
-
 .mm-credits
     margin-top: 25px
     margin-bottom: 0
+
 .mm-footer
     .mm-logo
         width: 180px
