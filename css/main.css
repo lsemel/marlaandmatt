@@ -2674,15 +2674,15 @@ h4 {
   font-weight: bold;
   text-transform: uppercase; }
 
-ul.mm-nav {
+.mm-nav {
   margin-bottom: 50px; }
-ul.mm-nav.affix-top, ul.mm-nav.affix, ul.mm-nav.affix-bottom {
+.mm-nav.affix-top, .mm-nav.affix, .mm-nav.affix-bottom {
   position: inherit; }
 @media (min-width: 992px) {
-  ul.mm-nav.affix {
+  .mm-nav.affix {
     position: fixed;
     top: 25px; } }
-ul.mm-nav li {
+.mm-nav li {
   font-size: 22px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -2690,17 +2690,29 @@ ul.mm-nav li {
   width: 25%;
   white-space: nowrap;
   margin-right: 20px; }
-ul.mm-nav li span {
+.mm-nav li span {
   font-family: "Pacifico", cursive;
   text-transform: lowercase; }
-ul.mm-nav li a {
+.mm-nav li a {
   color: #3f4345;
   text-decoration: none; }
-ul.mm-nav li a:hover, ul.mm-nav li a:active {
+.mm-nav li a:hover, .mm-nav li a:active {
   color: #fae15c;
   text-decoration: none; }
-ul.mm-nav li a.active {
+.mm-nav li a.active {
   color: #fae15c; }
+
+.mm-nav-directions {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 125%;
+  font-famiy: "Merriweather", "Georgia", serif;
+  margin-top: 20px;
+  color: #636a6d; }
+.mm-nav-directions a, .mm-nav-directions a:visited, .mm-nav-directions a:active {
+  margin-top: 5px;
+  display: block; }
 
 .footer {
   padding-top: 25px;

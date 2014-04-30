@@ -7,5 +7,5 @@ Requirements
 
     gem install jekyll
 
-    jekyll serve --baseurl '' --watch
+    jekyll serve --watch
 
